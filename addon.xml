@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<addon scheme="4.0">
+    <id>order_api_integration</id>
+    <name>Order API Integration</name>
+    <description>Send API calls when orders are created or status changes</description>
+    <version>1.0.0</version>
+    <priority>100</priority>
+    <status>active</status>
+    <settings>
+        <sections>
+            <section id="general">
+                <name>General Settings</name>
+                <items>
+                    <item id="api_base_url">
+                        <name>API Base URL</name>
+                        <description>Enter your API endpoint base URL (e.g.,
+                            https://your-domain.com/sms)</description>
+                        <type>input</type>
+                        <default_value>https://b871-41-201-108-209.ngrok-free.app/sms</default_value>
+                        <handler></handler>
+                    </item>
+                    <item id="enable_logging">
+                        <name>Enable API Logging</name>
+                        <description>Log API calls for debugging purposes</description>
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                        <handler></handler>
+                    </item>
+                    <item id="timeout_seconds">
+                        <name>API Timeout (seconds)</name>
+                        <description>How long to wait for API response</description>
+                        <type>input</type>
+                        <default_value>30</default_value>
+                        <handler></handler>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+</addon>
